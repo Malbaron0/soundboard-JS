@@ -1,0 +1,39 @@
+@import "bourbon/bourbon"
+
+html
+  font-size: 10px
+  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center
+  background-size: cover
+
+body,html
+  margin: 0
+  padding: 0
+  font-family: sans-serif
+  height: 100%
+  width: 100%
+
+
+.keys
+  +display(flex)
+  +justify-content(center)
+  +flex(1)
+  +align-items(center)
+  height: 100%
+
+.key
+  margin: 16px
+  border-color: orange
+  text-align: center
+  width: 80px
+  padding: 16px 8px
+  border: 4px solid black
+  border-radius: 8px
+  background: rgba(0,0,0,0.2)
+
+  kbd
+    display: block
+    font-size: 26px
+    color: white
+  span
+    color: orange
+    letter-spacing: 2px
